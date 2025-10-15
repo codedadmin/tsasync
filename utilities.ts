@@ -30,3 +30,5 @@ async function getInput(): Promise<string> {
     });
   });
 }
+
+export { getUser, getInput };
