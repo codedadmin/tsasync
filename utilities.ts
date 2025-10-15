@@ -1,3 +1,5 @@
+import * as readline from "readline";
+
 async function getUser() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -16,7 +18,6 @@ async function getUser() {
 }
 
 async function getInput(): Promise<string> {
-  const readline = require("readline");
 
   const rl = readline.createInterface({
     input: process.stdin,
@@ -30,3 +31,4 @@ async function getInput(): Promise<string> {
     });
   });
 }
+export { getUser, getInput };
