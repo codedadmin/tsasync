@@ -16,7 +16,7 @@ export async function getUser() {
 }
 
 export async function getInput(): Promise<string> {
-  const readline = require("readline");
+  const readline = await import("readline");
 
   const rl = readline.createInterface({
     input: process.stdin,
